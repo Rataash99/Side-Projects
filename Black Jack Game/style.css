@@ -1,0 +1,47 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+    background: url(https://th.bing.com/th/id/R.cd3dfcab0655804fbc9d4393958cf151?rik=jEdvi5OvUup6Cw&riu=http%3a%2f%2fwww.photos-public-domain.com%2fwp-content%2fuploads%2f2013%2f01%2fforest-green-abstract-pattern-laminate-counterop-texture.jpg&ehk=52FJZ5HFFko91KSp1kIULKn7RJ73km0v1F31%2bHk%2bnGI%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(180, 130, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap : 3rem;
+    font-family:sans-serif;
+    box-shadow: inset 0px 0px 100px 30px black;
+}
+h1{
+    font-size: 4rem;
+    color: rgb(183, 123, 11);
+}
+p, h2{
+    font-size: 2rem;
+    color: rgb(218, 195, 152);
+}
+#card-btn{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+button{
+    color: rgb(183, 123, 11);
+    background-color: transparent;
+    font-size: 2rem;
+    padding : 10px 30px;
+    width: 7em;
+    border-radius: 5px;
+    box-shadow:  0px 0px 40px 1px black;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    color: rgb(183, 123, 11);
+    text-shadow: 0px 0px 50px goldenrod;
+}
