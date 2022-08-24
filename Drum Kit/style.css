@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Permanent Marker', cursive;
+}
+body::before{
+    content: "";
+    background-image:url(./Images/concert.jpg);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+#container{
+    /* border: 2px solid red; */
+    padding-top: 30px;
+    position: fixed;
+    height: 100vh;
+    width : 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.key{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+    align-items: center;
+    margin : 22px;
+    padding: 6px 20px;
+    box-shadow: inset 0px 0px 20px black;
+}
+.playing{
+    transform: scale(1.3);
+    border: none;
+    box-shadow: inset 0px 0px 20px black, 0px 0px 20px tomato;
+}
+kbd{
+    font-family: 'Permanent Marker', cursive;;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-shadow: 0px 0px px red;
+}
+span{
+    color:goldenrod;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+}
