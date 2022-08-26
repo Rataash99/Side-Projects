@@ -1,0 +1,70 @@
+body{
+    margin : 0;
+    padding: 0;
+    font-family: 'Cinzel Decorative', cursive;}
+.panels{
+    /* border: 2px solid green; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+.panel{
+    /* border : 1px solid red; */
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    transition:
+    font-size 0.5s cubic-bezier(0.62, -0.19, 0.7, -0.11), flex 0.5s cubic-bezier(0.62, -0.19, 0.7, -0.11), background 0.5s;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 3px black;
+    flex: 1;
+}
+.panel1{
+    background-image: url(./Images/R.jpg);
+}
+.panel2{
+    background-image: url(./Images/7e50da32893d14668dd32910eac8cbb8.jpg);
+}
+.panel3{
+    background-image: url(./Images/Awesome-Mountains-iPhone-6S-Plus-Wallpaper-1082-x-1920-px-1.jpg);
+}
+.panel4{
+    background-image: url(./Images/yoal-desurmont-S9OCBwRFV_k-unsplash.jpg);
+}
+.panel5{
+    background-image: url(./Images/owl-dark-background-hy-2560x1440.jpg);
+}
+.panel6{
+    background-image: url(./Images/wallpaper-9.jpg);
+}
+.panel > *{
+    width: 100%;
+    transition: transform 0.5s;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.panel > *:first-child{ transform: translateY(-100%);}
+.panel.open-active > *:first-child{ transform: translateY(0);}
+.panel > *:last-child{ transform: translateY(100%);}
+.panel.open-active > *:last-child{ transform: translateY(0);}
+
+.panel.open {
+    flex: 2;
+    font-size: 30px;
+}
+.panel > p{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.panel p:nth-child(2){
+    font-size: 2.5em;
+}
