@@ -1,0 +1,88 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image:url(./Images/R.jpg);
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow:inset 0px 0px 200px 120px black;
+  }
+  
+  .voiceinator {
+    padding: 2rem;
+    width: 50rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    position: relative;
+    background: white;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  h1 {
+    width: calc(100% + 4rem);
+    margin: -2rem 0 2rem -2rem;
+    padding: .5rem;
+    background: #00ff5e;
+    border-bottom: 5px solid #0d6e3b;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 3px 0 #12ae60;
+  }
+  
+  .voiceinator input,
+  .voiceinator button,
+  .voiceinator select,
+  .voiceinator textarea {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 0;
+    font-size: 2rem;
+    background: #ffffff;
+    outline: 0;
+  }
+  
+  textarea {
+    height: 20rem;
+  }
+  
+  .voiceinator button {
+    background: #1aff00;
+    border: 0;
+    width: 49%;
+    float: left;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 0;
+    font-size: 2rem;
+    border-bottom: 5px solid #0b7542;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .voiceinator button:active {
+    top: 2px;
+  }
+  
+  .voiceinator button:nth-of-type(1) {
+    margin-right: 2%;
+  }
