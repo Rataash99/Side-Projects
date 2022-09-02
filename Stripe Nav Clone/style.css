@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    background-color: black;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body::before{
+      content: '';
+      height: 100vh;
+      width: 100vw;
+      z-index: -1;
+      position: absolute;
+      background:url(./software-engineers-vector.png);
+      background-repeat: no-repeat;
+      background-position:center;
+      opacity: 0.7;
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  h2 {
+    margin-top: 0;
+    padding-top: .8em;
+    font-size: 3rem;
+    color: rgb(0, 195, 255);
+  }
+
+  nav {
+    position: relative;
+    perspective: 600px;
+  }
+
+  .cool > li > a {
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    background: rgba(40, 195, 229, 0.2);
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cool > li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dropdown {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    padding: 20px;
+    top: -20px;
+    border-radius: 2px;
+    transition: all 0.5s;
+    transform: translateY(100px);
+    will-change: opacity;
+    display: none;
+  }
+
+  .trigger-enter .dropdown {
+    display: block;
+  }
+
+  .trigger-enter-active .dropdown {
+    opacity: 1;
+  }
+  
+  .dropdownBackground {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background:rgb(164, 241, 248);
+    border-radius: 4px;
+    box-shadow:  0px 0px 20px rgb(15, 138, 233);
+    border-radius: 30px;
+    transition: all 0.3s, opacity 0.1s, transform 0.2s;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+  }
+
+  .dropdownBackground.open {
+    opacity: 1;
+  }
+
+  .arrow {
+    position:static;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: rgb(164, 241, 248);
+    transform: translateY(-50%) rotate(45deg);
+    
+  }
+
+  .bio {
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+  }
+
+  .bio img {
+    float: left;
+    margin-right: 20px;
+    height: 100px;
+    width: 150px;
+    border-radius: 100px;
+  }
+
+  .courses {
+    min-width: 300px;
+  }
+
+  .courses li {
+    padding: 10px 0;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+
+  .dropdown a {
+    text-decoration: none;
+    color: #4d7914;
+  }
+
+  a.button {
+    background: black;
+    display: block;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
+  .button[href*=twitter] { background: #019FE9; }
+  .button[href*=facebook] { background: #3B5998; }
+  .button[href*=courses] { background: #ffc600; }
